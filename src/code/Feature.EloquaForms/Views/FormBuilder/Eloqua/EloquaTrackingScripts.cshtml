@@ -1,0 +1,87 @@
+﻿@using System.Web.Mvc.Html
+@using Feature.EloquaForms.Helpers
+@using Sitecore.Mvc
+@model Feature.EloquaForms.Models.Eloqua.Fields.EloquaTrackingScriptsViewModel
+
+@{
+    bool cookiesAccepted = true;
+    HttpCookie cookie = Request.Cookies["checkPolicy"];
+    if (cookie != null && cookie.Value == "false")
+    {
+        cookiesAccepted = false;
+    }
+}
+
+@if (Html.Sitecore().IsExperienceFormsEditMode())
+{
+    <div class="form-group">
+        <p class="form-control">
+            @Model.Name
+        </p>
+    </div>
+}
+<input id="@Html.IdFor(m => Model.CustomerGUID)" type="hidden" name="@Html.NameFor(m => Model.CustomerGUID)"
+       data-sc-field-name="elqCustomerGUID"
+       value="@Model.CustomerGUID">
+
+<input type="hidden" name="elqCookieWrite" value="0">
+<input value="@Model.EloquaFormName" type="hidden" name="elqFormName">
+<input value="@Model.EloquaSiteId" type="hidden" name="elqSiteId">
+<input name="elqCampaignId" type="hidden">
+
+@if (Sitecore.Configuration.Settings.GetBoolSetting("Eloqua.EloquaTrackingScriptsEnabled", false) && cookiesAccepted)
+{
+    <script type="text/javascript">
+        // General tracking scripts have to placed on the page where you're intending to perform the data lookup on
+        //beginning of general asynch tracking scripts
+        var _elqQ = _elqQ || [];
+        _elqQ.push(['elqSetSiteId', '@Model.EloquaSiteId']);
+        _elqQ.push(['elqTrackPageView']);
+        (function ()
+        {
+            function async_load()
+            {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//img.en25.com/i/elqCfg.min.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (window.attachEvent) { window.attachEvent('onload', async_load); }
+            else { window.addEventListener('DOMContentLoaded', async_load, false); }
+        })();
+    </script>
+
+    <script type="text/javascript">
+        var timerId = null, timeout = 5;
+        function WaitUntilCustomerGUIDIsRetrieved() {
+            if (!!(timerId)) {
+                if (timeout == 0) {
+                    return;
+                }
+                if (typeof this.GetElqCustomerGUID === 'function') {
+                    if ($("*[data-sc-field-name='elqCustomerGUID']")[0]) {
+                        $("*[data-sc-field-name='elqCustomerGUID']")[0].value = GetElqCustomerGUID();
+                    }
+                    if (document.getElementsByName("elqCustomerGUID")[0]) {
+                        document.getElementsByName("elqCustomerGUID")[0].value = GetElqCustomerGUID();
+                    }
+
+                    return;
+                }
+                timeout -= 1;
+            }
+            timerId = setTimeout("WaitUntilCustomerGUIDIsRetrieved()", 500);
+            return;
+        }
+        window.onload = WaitUntilCustomerGUIDIsRetrieved;
+        _elqQ.push(['elqGetCustomerGUID']);
+    </script>
+}
+else
+{
+    <script>
+        console.debug("Eloqua Tracking Scripts is Disabled or user denied use of cookies");
+    </script>
+}
