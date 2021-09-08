@@ -280,6 +280,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="App_Config\Include\Feature\Feature.EloquaForms\Feature.EloquaForms.config" />
     <None Include="packages.config" />
     <Content Include="Views\FormBuilder\Eloqua\EloquaTrackingScripts.cshtml" />
   </ItemGroup>
