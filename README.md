@@ -1,2 +1,2 @@
-# Sitecore-Forms-Eloqua
+# Sitecore Forms Eloqua
 This repository contains the code base for a Sitecore Eloqua Integration using Sitecore Forms
