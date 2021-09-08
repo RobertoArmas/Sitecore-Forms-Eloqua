@@ -1,0 +1,38 @@
+---
+ID: "6997aa81-5db5-48fa-b783-fa0a219b9803"
+Parent: "4813d2af-182d-4943-9cd9-7eba88dd5a2c"
+Template: "69732646-80b3-4f4f-bee9-7b69c8f3cb24"
+Path: /sitecore/client/Applications/FormsBuilder/Pages/FormDesigner/PageSettings/InfoTabControl
+DB: core
+SharedFields:
+- ID: "44169db0-8e87-4939-ae39-5d023a0eed1e"
+  Hint: IsStateDiscarded
+  Type: Checkbox
+  Value: 1
+- ID: "9bd36f0e-1876-47b6-b369-ecbaf2d5f620"
+  Hint: TabVisualStyle
+  Value: ContextPane
+- ID: "f9b7ffc3-95fb-4b4a-b2b8-46a73f321159"
+  Hint: TabMinWidth
+  Value: 
+- ID: "fea9309f-1641-49fb-88a4-99cc02a4f422"
+  Hint: SelectedValue
+  Value: "{B6C7F56E-3344-43A7-B740-64FF48853EAE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160419T125033Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a7f4da9d-91b0-4fc9-b565-fe6172ae77e1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20161128T114228Z

@@ -1,0 +1,125 @@
+---
+ID: "b6c7f56e-3344-43a7-b740-64ff48853eae"
+Parent: "6997aa81-5db5-48fa-b783-fa0a219b9803"
+Template: "8a7acb1a-0990-4c9e-a6f0-9612d0f5f51c"
+Path: /sitecore/client/Applications/FormsBuilder/Pages/FormDesigner/PageSettings/InfoTabControl/Design
+DB: core
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{A03CA645-AD3E-40AF-9694-D98B4057AAD3}"
+          p:before="*"
+          s:id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          s:par="PaddingType=Top&amp;UsePadding=1&amp;Id=SpacingBorder2"
+          s:ph="" />
+        <r
+          uid="{512C2CE2-73E5-440F-9D90-92AB67223CE2}"
+          p:after="r[@uid='{A03CA645-AD3E-40AF-9694-D98B4057AAD3}']"
+          s:id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          s:par="Id=ComponentsTitle"
+          s:ph="" />
+        <r
+          uid="{64BA0C1C-B4F1-4012-96AA-4D0E199AF5E2}"
+          p:after="r[@uid='{512C2CE2-73E5-440F-9D90-92AB67223CE2}']"
+          s:id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          s:par="Id=SpacingBorder1"
+          s:ph="" />
+        <r
+          uid="{6B1B70A9-6236-4447-B4B3-5F6082A61B8B}"
+          p:after="r[@uid='{64BA0C1C-B4F1-4012-96AA-4D0E199AF5E2}']"
+          s:id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          s:par="Id=ComponentsDescription"
+          s:ph="" />
+        <r
+          uid="{ED3AE365-02C5-4B10-8ECF-E2283DEC668B}"
+          p:after="r[@uid='{6B1B70A9-6236-4447-B4B3-5F6082A61B8B}']"
+          s:id="{1CA7EB02-74E0-42F9-B8C9-32E62FD505BD}"
+          s:par="Id=ExpanderBasic"
+          s:ph="" />
+        <r
+          uid="{20500FC4-4437-4343-B6B1-F3B59867E196}"
+          p:after="r[@uid='{ED3AE365-02C5-4B10-8ECF-E2283DEC668B}']"
+          s:id="{1CA7EB02-74E0-42F9-B8C9-32E62FD505BD}"
+          s:par="Id=ExpanderEloqua"
+          s:ph="" />
+        <r
+          uid="{F4D6816C-A056-4F13-8799-D4C697C89EA5}"
+          p:after="r[@uid='{20500FC4-4437-4343-B6B1-F3B59867E196}']"
+          s:id="{1CA7EB02-74E0-42F9-B8C9-32E62FD505BD}"
+          s:par="Id=ExpanderLists"
+          s:ph="" />
+        <r
+          uid="{25799735-35AF-48E6-8E2F-0D35438C2C15}"
+          p:after="r[@uid='{F4D6816C-A056-4F13-8799-D4C697C89EA5}']"
+          s:id="{1CA7EB02-74E0-42F9-B8C9-32E62FD505BD}"
+          s:par="Id=ExpanderSecurity"
+          s:ph="" />
+        <r
+          uid="{F4B0C881-F46E-47BB-B76B-C3219BF16D4A}"
+          p:after="r[@uid='{25799735-35AF-48E6-8E2F-0D35438C2C15}']"
+          s:id="{1CA7EB02-74E0-42F9-B8C9-32E62FD505BD}"
+          s:par="VisualStyle=ContextPane&amp;Id=ExpanderStructure"
+          s:ph="" />
+        <r
+          uid="{85DEAD48-AC75-4B74-AAFB-079D379E0C1B}"
+          p:after="r[@uid='{F4B0C881-F46E-47BB-B76B-C3219BF16D4A}']"
+          s:id="{E3DDC819-50A5-477A-A3A3-4CDCF3C7B5A4}"
+          s:par="Id=DraggableBasic"
+          s:ph="ExpanderBasic.Body" />
+        <r
+          uid="{DDF7C7EF-95E0-4E06-B399-059C29BB8811}"
+          p:after="r[@uid='{85DEAD48-AC75-4B74-AAFB-079D379E0C1B}']"
+          s:id="{E3DDC819-50A5-477A-A3A3-4CDCF3C7B5A4}"
+          s:par="Id=DraggableEloqua"
+          s:ph="ExpanderEloqua.Body" />
+        <r
+          uid="{993477DF-EC32-476E-B71E-E9D75F51A8A2}"
+          p:after="r[@uid='{DDF7C7EF-95E0-4E06-B399-059C29BB8811}']"
+          s:id="{E3DDC819-50A5-477A-A3A3-4CDCF3C7B5A4}"
+          s:par="Id=DraggableLists"
+          s:ph="ExpanderLists.Body" />
+        <r
+          uid="{4D8B0653-6834-4CF4-A6EA-14C64F16BB82}"
+          p:after="r[@uid='{993477DF-EC32-476E-B71E-E9D75F51A8A2}']"
+          s:id="{E3DDC819-50A5-477A-A3A3-4CDCF3C7B5A4}"
+          s:par="Id=DraggableSecurity"
+          s:ph="ExpanderSecurity.Body" />
+        <r
+          uid="{D7435984-DD5D-41A4-B98F-20FCD08AADCE}"
+          p:after="*[1=2]"
+          s:id="{E3DDC819-50A5-477A-A3A3-4CDCF3C7B5A4}"
+          s:par="Id=DraggableStructure"
+          s:ph="ExpanderStructure.Body" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160419T121718Z
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: Design
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1ed2afe4-4a95-463f-9e02-73412904491d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20210908T034822Z
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: Design
