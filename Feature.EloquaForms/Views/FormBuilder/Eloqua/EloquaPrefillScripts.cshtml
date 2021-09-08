@@ -1,0 +1,98 @@
+﻿@using Feature.EloquaForms.Helpers
+@using Sitecore
+@using Sitecore.Data
+@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@model Feature.EloquaForms.Models.Eloqua.Fields.EloquaPrefillScriptsViewModel
+@{
+    Sitecore.Data.Database master =
+        Sitecore.Context.Database;
+
+    if (Sitecore.Context.Database.Name == "core")
+    {
+        master =
+            Sitecore.Configuration.Factory.GetDatabase("master");
+    }
+    var currentItem = master.GetItem(new ID("{" + Model.ItemId + "}"));
+    var items = new List<Item>();
+    if (currentItem != null)
+    {
+        var parent = currentItem.Parent;
+        items = parent.GetChildren().Where(
+            i => i.TemplateID == new ID("{0908030B-4564-42EA-A6FA-C7A5A2D921A8}")
+                 || i.TemplateID == new ID("{886ADEC1-ABF8-40E1-9926-D9189C4E8E1B}")
+            ).ToList();
+    }
+
+
+}
+
+@if (Html.Sitecore().IsExperienceFormsEditMode())
+{
+    <div class="form-group">
+        <p class="form-control">
+            @Model.Name
+        </p>
+    </div>
+}
+<script type='text/javascript' language='JavaScript'>
+    // end of general async tracking scripts
+    function setFormFieldValue(elqForm, strFormFieldName, strContactFieldName) {
+        var element = $(elqForm.elements).filter('*[data-sc-field-name="' + strFormFieldName + '"]')[0];
+        if (element) {
+
+            var value = GetElqContentPersonalizationValue(strContactFieldName);
+
+            if (value) {
+                element.value = value;
+                var event = new Event("focus");
+                element.dispatchEvent(event);
+            }
+        }
+
+    }
+    function SetElqContent(){
+        if (this.GetElqContentPersonalizationValue){
+            var elqForm;
+            var blnFound = false;
+            //find the form object from the form HTMLName
+            for (var formIndex = 0; formIndex < document.forms.length; formIndex++)
+            {
+                for (var elemIndex = 0; elemIndex < document.forms[formIndex].length; elemIndex++)
+                {
+                    if (document.forms[formIndex].elements[elemIndex].name == "elqFormName")
+                    {
+                        if (document.forms[formIndex].elements[elemIndex].value == "@Model.EloquaFormName")
+                        {
+                            elqForm = document.forms[formIndex];
+                            blnFound = true;
+                            break;
+                        }
+                    }
+                }
+                if (blnFound) break;
+            }
+            if (elqForm)
+            {
+                @foreach (var item in items)
+                {
+                    var doPrefill = MainUtil.GetBool(item.Fields["Do Prefill"]?.Value, false);
+                    if (doPrefill)
+                    {
+                        var eloquaPrefillId = StringUtil.GetString(item.Fields["Eloqua Prefill Id"]?.Value,"");
+                        @(new HtmlString("setFormFieldValue(elqForm, \""+item.Name+"\", \""+eloquaPrefillId+"\");\n"));
+                    }
+
+                }
+            }
+        }
+    }
+    //end of Section 1
+
+</script>
+@if (Sitecore.Configuration.Settings.GetBoolSetting("Eloqua.EloquaTrackingScriptsEnabled", false))
+{
+    <SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript'>
+        _elqQ.push(['elqDataLookup', escape('@Model.EloquaDataLookupId'), '']);
+    </SCRIPT>
+}
