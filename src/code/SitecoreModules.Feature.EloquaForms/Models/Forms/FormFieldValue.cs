@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Feature.EloquaForms.Models.Forms
+namespace SitecoreModules.Feature.EloquaForms.Models.Forms
 {
     /// <summary>
     /// Represents an Eloqua form field value.

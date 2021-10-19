@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace Feature.EloquaForms.Models.Forms
+namespace SitecoreModules.Feature.EloquaForms.Models.Forms
 {
     /// <summary>
     /// Model for a Form Post Body.

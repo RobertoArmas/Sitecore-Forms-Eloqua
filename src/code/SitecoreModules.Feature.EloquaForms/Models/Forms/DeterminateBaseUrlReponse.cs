@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace Feature.EloquaForms.Models.Forms
+namespace SitecoreModules.Feature.EloquaForms.Models.Forms
 {
     /// <summary>
     /// Response object that contains data for which base URL to use when using the Eloqua API.

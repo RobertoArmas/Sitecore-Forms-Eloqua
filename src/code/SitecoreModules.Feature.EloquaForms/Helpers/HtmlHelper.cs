@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Sitecore;
 using Sitecore.Mvc.Helpers;
 
-namespace Feature.EloquaForms.Helpers
+namespace SitecoreModules.Feature.EloquaForms.Helpers
 {
     public static class HtmlHelper
     {

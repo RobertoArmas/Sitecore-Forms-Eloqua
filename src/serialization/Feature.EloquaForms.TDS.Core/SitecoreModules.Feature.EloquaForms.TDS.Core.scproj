@@ -8,7 +8,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <CompactSitecoreItemsInProjectFile>True</CompactSitecoreItemsInProjectFile>
     <AssemblyName>Feature.EloquaForms.TDS.Core</AssemblyName>
-    <Name>Feature.EloquaForms.TDS.Core</Name>
+    <Name>SitecoreModules.Feature.EloquaForms.TDS.Core</Name>
     <RootNamespace>Feature.EloquaForms.TDS.Core</RootNamespace>
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>core</SitecoreDatabase>

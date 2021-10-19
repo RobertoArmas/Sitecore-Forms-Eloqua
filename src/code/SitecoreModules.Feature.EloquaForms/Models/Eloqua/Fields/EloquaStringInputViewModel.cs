@@ -7,7 +7,7 @@ using Sitecore;
 using Sitecore.Data.Items;
 using Sitecore.ExperienceForms.Mvc.Models.Fields;
 
-namespace Feature.EloquaForms.Models.Eloqua.Fields
+namespace SitecoreModules.Feature.EloquaForms.Models.Eloqua.Fields
 {
     [Serializable]
     public class EloquaStringInputViewModel : StringInputViewModel

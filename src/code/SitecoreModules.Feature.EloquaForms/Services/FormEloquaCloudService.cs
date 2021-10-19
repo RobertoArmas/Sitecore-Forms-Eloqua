@@ -7,10 +7,10 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using Feature.EloquaForms.Models.Forms;
 using Newtonsoft.Json;
+using SitecoreModules.Feature.EloquaForms.Models.Forms;
 
-namespace Feature.EloquaForms.Services
+namespace SitecoreModules.Feature.EloquaForms.Services
 {
     internal class FormEloquaCloudService : IEloquaCloudService
     {
