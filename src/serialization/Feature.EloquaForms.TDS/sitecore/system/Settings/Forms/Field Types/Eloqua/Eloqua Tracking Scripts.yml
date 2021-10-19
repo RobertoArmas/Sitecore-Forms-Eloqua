@@ -10,7 +10,7 @@ SharedFields:
   Value: Eloqua/EloquaTrackingScripts
 - ID: "16882a65-d10b-4e9e-9d6a-b13480a34f2d"
   Hint: Model Type
-  Value: Feature.EloquaForms.Models.Eloqua.Fields.EloquaTrackingScriptsViewModel, Feature.EloquaForms
+  Value: SitecoreModules.Feature.EloquaForms.Models.Eloqua.Fields.EloquaTrackingScriptsViewModel, SitecoreModules.Feature.EloquaForms
 - ID: "73f3c325-9b2a-4854-b698-038e06887fcd"
   Hint: Property Editor
   Value: "{27C72B60-23A0-4F96-B81F-C2371F1628DA}"
@@ -44,11 +44,11 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "52977fb2-55e6-405b-863d-d00130f0b351"
+      Value: "e6e5c55d-a3c8-4e9f-8ad1-ae16d575a71a"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210908T040751Z
+      Value: 20211019T215932Z
