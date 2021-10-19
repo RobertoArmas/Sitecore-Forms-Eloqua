@@ -7,8 +7,8 @@
     <ProjectGuid>{3F402BCB-AFDD-480E-8716-915C05A0A572}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SitecoreModule.Feature.EloquaForms</RootNamespace>
-    <AssemblyName>SitecoreModule.Feature.EloquaForms</AssemblyName>
+    <RootNamespace>SitecoreModules.Feature.EloquaForms</RootNamespace>
+    <AssemblyName>SitecoreModules.Feature.EloquaForms</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
