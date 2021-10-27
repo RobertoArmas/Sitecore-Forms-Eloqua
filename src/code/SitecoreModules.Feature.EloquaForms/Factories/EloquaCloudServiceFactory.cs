@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Feature.EloquaForms.Services;
+using SitecoreModules.Feature.EloquaForms.Services;
 
-namespace Feature.EloquaForms.Factories
+namespace SitecoreModules.Feature.EloquaForms.Factories
 {
     /// <summary>
     /// Creates instances of <see cref="IEloquaCloudService"/>.

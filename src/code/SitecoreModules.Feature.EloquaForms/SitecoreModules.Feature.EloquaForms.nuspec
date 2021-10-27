@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Roberto Armas</authors>
+    <owners>Roberto Armas</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/RobertoArmas/Sitecore-Forms-Eloqua</projectUrl>
+    <description>
+      Compatible with Sitecore 10.1.1
+      Requires .NET Framework 4.8
+
+      SitecoreModules.Feature.EloquaForms include an integration with Sitecore Forms and Oracle Eloqua.
+    </description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Sitecore SitecoreForms Eloqua</tags>
+  </metadata>
+</package>

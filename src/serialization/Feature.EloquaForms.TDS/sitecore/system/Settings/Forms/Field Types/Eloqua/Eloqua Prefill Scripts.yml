@@ -10,7 +10,7 @@ SharedFields:
   Value: Eloqua/EloquaPrefillScripts
 - ID: "16882a65-d10b-4e9e-9d6a-b13480a34f2d"
   Hint: Model Type
-  Value: Feature.EloquaForms.Models.Eloqua.Fields.EloquaPrefillScriptsViewModel, Feature.EloquaForms
+  Value: SitecoreModules.Feature.EloquaForms.Models.Eloqua.Fields.EloquaPrefillScriptsViewModel, SitecoreModules.Feature.EloquaForms
 - ID: "73f3c325-9b2a-4854-b698-038e06887fcd"
   Hint: Property Editor
   Value: "{548F1EFE-7A5C-40B9-8090-B57E9C6F2A1C}"
@@ -44,11 +44,11 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ac3910d9-e6aa-4c39-be4c-37600a2c1a71"
+      Value: "63573797-7e5c-404e-ad1b-d36bcacadd0b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210908T040805Z
+      Value: 20211019T215918Z

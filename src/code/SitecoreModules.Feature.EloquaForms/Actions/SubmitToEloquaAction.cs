@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Feature.EloquaForms.Factories;
-using Feature.EloquaForms.Models.Eloqua.Fields;
-using Feature.EloquaForms.Models.Forms;
-using Feature.EloquaForms.Services;
 using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Mvc.Models.Fields;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
+using SitecoreModules.Feature.EloquaForms.Factories;
+using SitecoreModules.Feature.EloquaForms.Models.Eloqua.Fields;
+using SitecoreModules.Feature.EloquaForms.Models.Forms;
+using SitecoreModules.Feature.EloquaForms.Services;
 using static System.FormattableString;
 
-namespace Feature.EloquaForms.Actions
+namespace SitecoreModules.Feature.EloquaForms.Actions
 {
     /// <summary>
     /// Executes a submit action for logging the form submit status.
