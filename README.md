@@ -4,7 +4,15 @@ This repository contains the code base for a Sitecore Eloqua Integration using S
 You will find more info in the following link:
 https://rmcdigital.com/sitecore/eloqua-sitecore-integration/
 
-## Installation:
+## Nuget Installation
+
+You can easily install Sitecore Forms Eloqua by adding a Nuget Package in your Project.
+
+```powershell
+PM> Install-Package SitecoreModules.Feature.EloquaForms
+```
+
+## Manual Installation:
 
 https://github.com/RobertoArmas/Sitecore-Forms-Eloqua/releases/tag/v10.1.1.0809202101
 
