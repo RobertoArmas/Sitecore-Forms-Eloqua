@@ -284,10 +284,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="App_Config\Include\Feature\SitecoreModules.Feature.EloquaForms\SitecoreModules.Feature.EloquaForms.PackageVerification.config" />
-    <None Include="App_Config\Include\Feature\SitecoreModules.Feature.EloquaForms\SitecoreModules.Feature.EloquaForms.config" />
+    <Content Include="App_Config\Include\Feature\SitecoreModules.Feature.EloquaForms\SitecoreModules.Feature.EloquaForms.PackageVerification.config" />
+    <Content Include="App_Config\Include\Feature\SitecoreModules.Feature.EloquaForms\SitecoreModules.Feature.EloquaForms.config" />
     <None Include="App_Config\Include\Foundation\Constellation.Foundation.PackageVerification.config.example" />
-    <None Include="App_Data\packages\Sitecore-Modules-Feature-EloquaForms.zip" />
+    <Content Include="App_Data\packages\Sitecore-Modules-Feature-EloquaForms.zip" />
     <None Include="packages.config" />
     <Content Include="App_Data\packages\PutPackagesHere.txt" />
     <Content Include="Constellation.License.txt" />
