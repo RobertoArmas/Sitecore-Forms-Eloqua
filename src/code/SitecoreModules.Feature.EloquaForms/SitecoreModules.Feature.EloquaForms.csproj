@@ -281,6 +281,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FormEloquaCloudService.cs" />
     <Compile Include="Services\IEloquaCloudService.cs" />
+    <Compile Include="Services\RestApiEloquaCloudService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
